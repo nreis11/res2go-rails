@@ -39,7 +39,7 @@ gem 'jbuilder', '~> 2.5'
 # Custom
 
 # Styling
-gem 'bootstrap-sass', '~>3.3.7'
+gem 'bootstrap-sass', '~>3.4.1'
 # Login authentication
 gem 'devise'
 
