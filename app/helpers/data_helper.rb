@@ -9,8 +9,8 @@ module DataHelper
 
   def self.extract_table_data(document)
     table_data_children = [1, 3, 5]
-    main_content = document.css('#main_content')
-    table_rows = main_content.css('tr')
+    main_content = document.css('#RES')
+    table_rows = main_content.css('.white')
 
     rows = []
     table_rows.each do |row|
@@ -25,9 +25,6 @@ module DataHelper
 
   def self.clean_up_data(rows)
     rows.delete_if { |row| row.any? { |value| value.length < 3 } }
-    # Remove headers and trailing header
-    rows.delete_at(0)
-    rows.delete_at(-1)
     rows
   end
 
