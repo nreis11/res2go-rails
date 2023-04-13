@@ -3,10 +3,26 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .progress {
-  border: 1px solid grey;
+  display: inline-block;
+  border: 2px solid grey;
+  transform: rotate(-90deg);
+  width: 30px;
+  margin-bottom: 0px;
+  box-shadow: inset 0px 4px 6px #ccc;
+  background-color: rgb(232, 182, 45);
+}
+
+.progress-bar {
+  box-shadow: inset 0px 4px 6px rgba(100,100,100,0.6);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,48,162,1) 28%, rgba(23,80,209,1) 84%, rgba(25,37,255,1) 100%);
+}
+
+.percentage {
+  display: inline-block;
 }
 
 .reservoir-row > td:first-child, .reservoir-row > td:last-child {
   vertical-align: middle;
-  padding: 3px 20px;
+  padding: 10px 20px;
 }

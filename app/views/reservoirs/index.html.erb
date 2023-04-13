@@ -11,8 +11,8 @@
         <table class="table table-striped reservoir-table">
           <tr>
             <th>Name</th>
-            <th>Storage(AF)</th>
-            <th>Capacity(AF)</th>
+            <th>Storage (AF)</th>
+            <th>Capacity (AF)</th>
             <th>% Capacity</th>
           </tr>
         <% @reservoirs.each do |reservoir| %>
@@ -25,14 +25,18 @@
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="<%= reservoir.percent_capacity %>"
                   aria-valuemin="0" aria-valuemax="100" style="width:<%= reservoir.percent_capacity %>%">
-                  <span><%= reservoir.percent_capacity %>%</span>
+                  <span class="sr-only"><%= reservoir.percent_capacity %>%</span>
                   </div>
                 </div>
+                <div class="percentage"><%= reservoir.percent_capacity %>%</div>  
               </td>
             </tr>
 
             <% end %>
         </table>
+      </div>
+      <div>
+        <p>AF - Acre Feet</p>
       </div>
     </div>
   </div>
