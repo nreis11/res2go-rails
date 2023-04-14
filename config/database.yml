@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: res2go_production
-  username: res2go
-  password: <%= ENV['RES2GO_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
