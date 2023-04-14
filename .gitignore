@@ -40,7 +40,6 @@ ignored/
 .irb-save-history
 chromedriver.log
 .tddium*
-bin/
 .env
 *.swp
 
