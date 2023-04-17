@@ -26,7 +26,7 @@
                   <th>Delete</th>
                 </tr>
               <% @user.stats.each do |stat| %>
-              <tr>
+              <tr class="reservoir-row">
                 <td><%= stat.reservoir.name %></td>
                 <td><%= stat.reservoir.storage %></td>
                 <td><%= stat.reservoir.capacity %></td>

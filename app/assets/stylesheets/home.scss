@@ -11,15 +11,16 @@
   color: #FFF;
   text-shadow: 3px 3px 4px black; 
   height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-hero > .container {
-  vertical-align: middle;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .home-hero > .container > .btn-lg {
@@ -36,10 +37,13 @@
   font-size: 1.2em;
 }
 
+.navbar-nav > li > a {
+  padding-right: 15px;
+  padding-left: 0px;
+}
+
 
 footer {
   text-align: center;
   font-size: 1.5rem;
-  // position: absolute;
-  // bottom: 20px;
 }

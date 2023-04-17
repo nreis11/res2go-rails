@@ -14,11 +14,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "All Reservoirs", reservoirs_path, class: 'btn' %></li>
-        <% if user_signed_in? %>
-          <li><%= link_to "My Reservoirs", user_path(current_user.id), class: 'btn' %></li>
+      <% if user_signed_in? %>
+          <li><%= link_to "Dashboard", user_path(current_user.id), class: 'btn' %></li>
+          <li><%= link_to "Reservoirs", reservoirs_path, class: 'btn' %></li>
           <li><%= button_to "Logout", destroy_user_session_path, method: :delete, class: 'btn btn-default navbar-btn' %></li>
-        <% else %>
+          <% else %>
+          <li><%= link_to "Reservoirs", reservoirs_path, class: 'btn' %></li>
           <li><%= link_to "Log In", new_user_session_path, class: 'btn', method: :get %></li>
         <% end %>
       </ul>
