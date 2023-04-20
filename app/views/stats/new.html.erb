@@ -12,14 +12,15 @@
         <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %> 
         
         <% if @stat.errors.any? %>
-            <h2>Errors</h2>
-            <ul>
-              <% @stat.errors.full_messages.each do |error| %>
-              <li>
-                <%= error %>
-              <% end %>
-              </li>
-            </ul>
+            <div class="alert alert-danger">
+              <ul>
+                <% @stat.errors.full_messages.each do |error| %>
+                <li>
+                  <%= error %>
+                <% end %>
+                </li>
+              </ul>
+            </div>
         <% end %>
 
         <div class="form-group">
