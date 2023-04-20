@@ -24,7 +24,7 @@ module DataHelper
   end
 
   def self.clean_up_data(rows)
-    rows.delete_if { |row| row.any? { |value| value.length < 3 } }
+    rows.delete_if { |row| row.any? { |value| value.length < 3 or value == "---" } }
     rows
   end
 

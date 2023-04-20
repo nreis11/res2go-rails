@@ -43,5 +43,5 @@ chromedriver.log
 .env
 *.swp
 
-
+reservoir_data.csv
 /config/master.key

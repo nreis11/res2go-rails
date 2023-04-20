@@ -2,14 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.reservoir-table td {
+  height: 25px;
+}
+
 .progress {
   display: inline-block;
-  border: 2px solid grey;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+  border-top: 1px solid grey;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   transform: rotate(-90deg);
   width: 30px;
   margin-bottom: 0px;
   box-shadow: inset 0px 4px 6px #ccc;
   background-color: rgb(232, 182, 45);
+  vertical-align: bottom;
 }
 
 .progress-bar {
@@ -20,4 +29,5 @@
 
 .percentage {
   display: inline-block;
+  vertical-align: middle;
 }
