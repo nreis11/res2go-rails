@@ -6,17 +6,17 @@
                     <a href="#">Home</a>
                 </li>
                 <li class="footer-menu-divider">&sdot;</li>
+                <% if user_signed_in? %>
                 <li>
-                    <%= link_to "All Reservoirs", reservoirs_path %>
+                <%= link_to "Dashboard", user_path(current_user) %>
                 </li>
                 <li class="footer-menu-divider">&sdot;</li>
-                <% if user_signed_in? %>
-                    <li>
-                        <%= link_to "My Reservoirs", user_path(current_user) %>
-                    </li>
                 <% end %>
+                <li>
+                    <%= link_to "Reservoirs", reservoirs_path %>
+                </li>
             </ul>
-            <p class="copyright text-muted small">Copyright &copy; Nicholas Reis 2017. All Rights Reserved</p>
+            <p class="copyright text-muted small">Copyright &copy; <span id="year"><%= Date.today.year %></span>. All Rights Reserved</p>
         </div>
     </div>
 </div>
