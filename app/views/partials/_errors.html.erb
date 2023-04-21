@@ -1,0 +1,11 @@
+<% if locals[:data].errors.any? %>
+    <div class="alert alert-danger">
+    <ul>
+        <% locals[:data].errors.full_messages.each do |error| %>
+        <li>
+        <%= error %>
+        <% end %>
+        </li>
+    </ul>
+    </div>
+<% end %>

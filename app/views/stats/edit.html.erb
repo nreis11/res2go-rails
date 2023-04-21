@@ -3,6 +3,10 @@
     <h3>Edit <%= @stat.reservoir.name.split.map(&:capitalize).join(' ') %> Reservoir</h3>
 
     <%= form_for @stat, html: {class: "form-group"} do |f| %>
+
+      <!-- Error partial -->
+      <%= render 'partials/errors', locals: { data: @stat } %>
+
       <%= f.label :min %>
       <%= f.text_field :min, class: "form-control" %><br />
 

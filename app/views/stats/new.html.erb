@@ -1,7 +1,7 @@
 <div class="stat-container container">
   <div class="row">
     <div class="col-md-4 col-md-offset-2">
-      <h1>New Reservoir</h1>
+      <h1>Add Reservoir</h1>
         <ul>  
           <li>Select a reservoir and optionally, a minimum or maximum threshold.</li>
           <li>If the reservoir capacity falls below the minimum threshold or rises above the maximum threshold, a notification will be sent to you.</li>
@@ -11,17 +11,7 @@
       <form class="form" action="/stats" method="POST">
         <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %> 
         
-        <% if @stat.errors.any? %>
-            <div class="alert alert-danger">
-              <ul>
-                <% @stat.errors.full_messages.each do |error| %>
-                <li>
-                  <%= error %>
-                <% end %>
-                </li>
-              </ul>
-            </div>
-        <% end %>
+        <%= render 'partials/errors', locals: { data: @stat } %>
 
         <div class="form-group">
           <select class="form-control" name="reservoir_name">

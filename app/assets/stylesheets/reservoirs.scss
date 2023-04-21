@@ -6,6 +6,12 @@
   height: 25px;
 }
 
+#caption {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+
 .progress {
   display: inline-block;
   border-bottom: 1px solid grey;

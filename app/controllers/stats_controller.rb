@@ -30,8 +30,11 @@ class StatsController < ApplicationController
 
   def update
     @stat = Stat.find(params[:id])
-    @stat.update(min: params["stat"][:min], max: params["stat"][:max])
-    redirect_to user_path
+    if @stat.update(min: params["stat"][:min], max: params["stat"][:max])
+      redirect_to user_path
+    else
+      render :edit
+    end
   end
 
   def destroy
