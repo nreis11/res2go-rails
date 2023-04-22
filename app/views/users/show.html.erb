@@ -2,16 +2,16 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-xs-12 col-md-8 col-md-offset-2 well">
+      <div class="col-md-8 col-md-offset-2 well">
         <div class="panel panel-primary">
           <!-- Default panel contents -->
           <div class="panel-heading text-center">
-            <h3 class="panel-title">My Reservoirs</h3>
+            <h3 class="panel-title">My Reservoirs</h3><span id="caption">All measurements are in Acre Feet (AF).</span>
           </div>
 
           <!-- Table -->
             <table class="table reservoir-table">
-              <% if !@user.stats.empty? %>
+              <% if !@stats.empty? %>
                 <tr id="reservoir-table-header">
               <% else %>
                 <tr id="reservoir-table-header" style="display: none">
@@ -24,7 +24,7 @@
                   <th>% Max.</th>
                   <th>Actions</th>
                 </tr>
-              <% @user.stats.each do |stat| %>
+              <% @stats.each do |stat| %>
               <tr class="reservoir-row">
                 <td><%= stat.reservoir.name %></td>
                 <td><%= stat.reservoir.storage %></td>
