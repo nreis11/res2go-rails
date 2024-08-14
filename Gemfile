@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Custom
+gem 'rake', '~> 13.2', '>= 13.2.1'
 
 # Styling
 gem 'bootstrap-sass', '~>3.4.1'
