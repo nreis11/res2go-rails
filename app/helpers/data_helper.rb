@@ -1,3 +1,5 @@
+require 'csv'
+
 module DataHelper
   def self.get_page(url)
     HTTParty.get(url)
