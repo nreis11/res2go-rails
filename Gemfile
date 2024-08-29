@@ -41,7 +41,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'rake', '~> 13.2', '>= 13.2.1'
 
 # Styling
-gem 'bootstrap-sass', '~>3.4.1'
+gem 'bootstrap', '~> 5.0'
 # Login authentication
 gem 'devise'
 
