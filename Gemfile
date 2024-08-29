@@ -48,7 +48,7 @@ gem 'devise'
 # Reservoir Web Scraper
 gem 'httparty'
 
-gem 'rails_12factor', group: :production
+# gem 'rails_12factor', group: :production
 
 # Keep alive pinger for heroku
 gem 'rufus-scheduler'
