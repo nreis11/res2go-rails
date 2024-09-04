@@ -45,3 +45,6 @@ chromedriver.log
 
 reservoir_data.csv
 /config/master.key
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
