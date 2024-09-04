@@ -10,17 +10,8 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require_tree .
+ *= require_self
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "home";
-@import "login";
-@import "registration";
-@import "reservoirs";
-@import "stats";
-@import "users";
-
-.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
-    vertical-align: middle;
-    padding: 13px 8px;
-}

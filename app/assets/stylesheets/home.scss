@@ -8,7 +8,6 @@
                   rgba(20,20,20, .3)),
                   url("main-reservoir.jpg");
   background-size: cover;
-  color: #FFF;
   text-shadow: 3px 3px 4px black; 
   height: 80vh;
   display: flex;
@@ -21,6 +20,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #FFF;
 }
 
 .home-hero > .container > .btn-lg {

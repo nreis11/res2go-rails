@@ -2,8 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.reservoir-table td {
-  height: 25px;
+@media (min-width: 750px) {
+  .reservoir-table td {
+    padding: 12px !important;
+ }
 }
 
 #caption {
@@ -20,16 +22,13 @@
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   transform: rotate(-90deg);
-  width: 30px;
-  margin-bottom: 0px;
-  box-shadow: inset 0px 4px 6px #ccc;
-  background-color: rgb(232, 182, 45);
+  width: 40px;
+  margin-bottom: 0px !important;
+  background-color: rgb(232, 182, 45) !important;
   vertical-align: bottom;
 }
 
 .progress-bar {
-  box-shadow: inset 0px 4px 6px rgba(100,100,100,0.6);
-  background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,48,162,1) 28%, rgba(23,80,209,1) 84%, rgba(25,37,255,1) 100%);
 }
 

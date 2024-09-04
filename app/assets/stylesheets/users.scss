@@ -14,3 +14,10 @@
 .user-hero .well {
   background: rgba(255, 255, 255, 0.9)
 }
+
+tr.reservoir-row > td {
+  vertical-align: middle !important;
+}
+tr.reservoir-row > td:nth-child(1) {
+  font-weight: bold;
+}
