@@ -40,7 +40,7 @@ class StatsController < ApplicationController
   def destroy
     @stat = Stat.find(params[:id])
     @stat.destroy
-    redirect_to user_path
+    redirect_to user_path, :notice => "Reservoir has been successfully deleted."
   end
   
 end
