@@ -6,7 +6,7 @@
         <div class="panel panel-primary">
           <!-- Default panel contents -->
           <div class="panel-heading text-center">
-            <h3 class="panel-title">My Reservoirs</h3><span id="caption">All measurements are in Acre Feet (AF).</span>
+            <h3 class="panel-title">My Reservoirs</h3>
           </div>
 
           <!-- Table -->
@@ -17,8 +17,8 @@
                 <tr id="reservoir-table-header" style="display: none">
               <% end %>
                   <th>Name</th>
-                  <th>Storage</th>
-                  <th>Capacity</th>
+                  <th>Storage*</th>
+                  <th>Capacity*</th>
                   <th>% Capacity</th>
                   <th>% Min.</th>
                   <th>% Max.</th>
@@ -53,6 +53,9 @@
 
           </div>
             <%= link_to '<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Reservoir'.html_safe, new_stat_path, :class => "btn btn-primary text-center" %>
+            <div id="caption">
+              <span>*Measurements are in Acre Feet (AF).</span>
+            </div>
         </div>
       </div>
 

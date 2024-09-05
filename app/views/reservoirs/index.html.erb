@@ -4,15 +4,15 @@
       <div class="panel panel-primary">
         <!-- Default panel contents -->
         <div class="panel-heading text-center">
-          <h3 class="panel-title">Reservoir Index</h3><span id="caption">All measurements are in Acre Feet (AF).</span>
+          <h3 class="panel-title">Reservoir Index</h3>
         </div>
 
         <!-- Table -->
         <table class="table reservoir-table table-striped">
           <tr>
             <th>Name</th>
-            <th>Storage (AF)</th>
-            <th>Capacity (AF)</th>
+            <th>Storage*</th>
+            <th>Capacity*</th>
             <th>% Capacity</th>
           </tr>
         <% @reservoirs.each do |reservoir| %>
@@ -34,6 +34,9 @@
 
             <% end %>
         </table>
+      </div>
+      <div id="caption">
+        <span>*Measurements are in Acre Feet (AF).</span>
       </div>
     </div>
   </div>
